@@ -1,0 +1,388 @@
+/*
+Theme Name: PC TEST
+Theme URI: https://github.com/yyss8/
+Author: schen
+Author URI: https://github.com/yyss8/
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+    font-family:Helvetica Neue LT Std, Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: white;
+}
+
+header .header-inner{
+    position: relative;
+    height:100%;
+    padding:12px 0;
+}
+
+header .header-inner .top-logo{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+header .header-menu{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+header .header-menu li{
+    list-style: none;
+}
+
+header .header-menu li.header-menu-item{
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+header .header-menu .header-menu-item>a{
+    font-size: 16px;
+    color:#3585b7;
+    text-align: right;
+    text-decoration: none;
+}
+
+header .header-menu .header-menu-item>a:hover{
+    color:#256288;
+}
+
+header .header-menu-mobile{
+    position: relative;
+}
+
+header .header-menu-mobile .header-menu-item{
+    list-style: none;
+    background-color: #00355f;
+    text-align: center;
+    padding:10px;
+}
+
+#mobile-menu-button{
+    font-size: 23px;
+}
+
+header .header-menu-mobile .header-menu-item a{
+    color:white;
+}
+
+header .header-menu-mobile .header-menu-item.move-up{
+    border-top:1px solid white;
+}
+
+header .header-menu-mobile .header-menu-logo{
+    padding:15px 20px;
+    background-color: #00355f;
+}
+
+header .header-menu-mobile .header-menu-logo a{
+    color:white;
+    font-size: 18px;
+}
+
+header .header-menu-mobile .header-menu-items{
+    display: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    header .header-menu{
+        display: none !important;
+    }
+
+    header .header-inner{
+        padding:0;
+    }
+
+    header .header-inner .top-logo{
+        display: none;
+    }
+}
+
+@media screen and (min-width:570px){
+    header .header-menu-mobile{
+        display: none;
+    }
+
+    header{
+        height:155px;
+    }
+}
+
+
+/** BODY START */
+
+.main-section{
+    height:750px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-section .video-overlay{
+    background-color: #00355f;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.main-section .circle-half-wrapper{
+    left: -86px;
+    top: 20%;
+    width: 767px;
+    height: 767px;
+    z-index:4;
+    position: absolute;
+}
+
+.main-section .circle-half-wrapper .circle-half-image{
+    opacity: 0.361;
+    background-color: rgb(97, 27, 175);
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.main-section .circle-half-wrapper .circle-half-text h1, .main-section .circle-half-wrapper .circle-half-text h3{
+    color:white;
+    z-index:5;
+}
+
+.main-section .width-wrapper{
+    position: relative;
+    z-index: 3;
+    height:100%;
+}
+
+.main-section .width-wrapper img{
+    position: absolute;
+    right: 0;
+    opacity: 0.6;
+    top:15%;
+}
+
+.main-section .video-overlay, .main-section video{
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:100%;
+}
+
+.main-section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    -o-object-fit: fill;
+   object-fit: fill;
+}
+
+.about-us{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about-us h1{
+    margin:42px 0 35px;
+    color:#00355f;
+    font-weight: 400;
+}
+
+.about-us p{
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.what-we-do{
+    background-image: url('./assets/imgs/what-we-do-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.what-we-do .content-overlay{
+    background-color:black;
+    opacity: 0.05;
+    width:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    height:100%;
+}
+
+.what-we-do .text-content{
+    background-color: #D5D5D5;
+    width:100%;
+    opacity: 0.92;
+}
+
+.what-we-do .text-content .width-wrapper{
+    position: relative;
+}
+
+.what-we-do .text-content h1{
+    margin:42px 0 35px;
+    color:#00355f;
+    font-weight: 400;
+}
+
+.what-we-do .text-content .text-area{
+    max-width: 380px;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 680px) {
+    .main-section{
+        height:330px;
+    }
+
+    .what-we-do .text-content h1, .what-we-do .text-content .text-area{
+        text-align: center;
+    }
+
+    .what-we-do{
+        min-height:330px;
+    }
+
+    .what-we-do .text-content{
+        min-height:210px;
+    }
+
+    .what-we-do .text-content .wheel{
+        margin:30px 0;
+    }
+
+    .what-we-do .text-content .wheel img{
+        max-width: 100%;
+    }
+
+    .main-section .circle-half-wrapper{
+        width:350px;
+        height:350px;
+        top:25%;
+        left: -90px;
+    }
+
+    .main-section .circle-half-wrapper h1, .main-section .circle-half-wrapper h3{
+        font-size: 85%;
+    }
+
+    .main-section .width-wrapper img{
+        width:130px;
+        top:12%;
+    }
+}
+
+@media screen and (min-width:570px){
+    .what-we-do .text-content .wheel{
+        position: absolute;
+        right:0;
+        top:-40%;
+    }
+    
+    .what-we-do {
+        height:680px;
+    }
+
+    .what-we-do .text-content{
+        height:420px;
+    }
+}
+
+
+
+/** BODY END */
+
+/** FOOTER START */
+
+footer{
+    height:277px;
+    background-color: #00355f;
+}
+
+footer .footer-inner{
+    padding:30px 0 23px;
+    color:white;
+    height: 100%;
+    position: relative;
+}
+
+footer .footer-inner .footer-address p{
+    margin:0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+footer .footer-inner .copyright{
+    position: absolute;
+    bottom:23px;
+    margin:0;
+    font-size: 16px;
+}
+
+footer .footer-inner .follow-us p{
+    line-height: 20px;
+    font-weight: 400;
+}
+
+footer .footer-inner .follow-us p{
+    margin:0;
+}
+
+footer .footer-inner .follow-us a{
+    color:white;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 680px) {
+    footer .footer-inner{
+        padding:30px 15px 23px;
+    }
+
+    footer .footer-address-wrapper{
+        display: block !important;
+    }
+
+    footer .follow-us{
+        margin-top:20px;
+    }
+
+    footer .follow-us p{
+        text-align: left !important;
+    }
+}
+
+/** FOOTER END */
+
+/** GENERAL */
+
+.width-wrapper{
+    width:1024px;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 680px) {
+    .width-wrapper{
+        width:100%;
+        padding:0 20px;
+    }
+}
